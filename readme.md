@@ -2,11 +2,11 @@
 
 ## icons
 
-website om ico-font te genereren => [https://icomoon.io](icomoon.io)
+website om ico-font te genereren => (https://icomoon.io)[icomoon.io]
 
 ## reset
 
-Erik Meyer [https://meyerweb.com/eric/tools/css/reset/](reset.css)
+Erik Meyer (https://meyerweb.com/eric/tools/css/reset/)[reset.css]
 
 ## tips
 
