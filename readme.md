@@ -8,6 +8,10 @@ website om ico-font te genereren => [icomoon.io](https://icomoon.io)
 
 Erik Meyer [reset.css](https://meyerweb.com/eric/tools/css/reset/)
 
+# google fonts
+
+[lato font](https://fonts.google.com/?query=lato)
+
 ## tips
 
 - box-sizing niet vergeten
