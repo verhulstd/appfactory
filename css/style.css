@@ -78,3 +78,104 @@ footer {
   min-height: 10px;
   /* background-color: rgba(255, 255, 255, 0.3); */
 }
+.slider .container {
+  height: calc(100vh - 95px);
+  background-image: url("../images/slide.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+.slider .container .left,
+.slider .container .right {
+  width: 60px;
+  height: 60px;
+  display: block;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.slider .container .left:after,
+.slider .container .right:after {
+  content: "<";
+  font-size: 60px;
+  color: grey;
+  font-family: lato;
+}
+.slider .container .right {
+  left: auto;
+  right: 0;
+}
+.slider .container .right:after {
+  content: ">";
+}
+.container h2 {
+  font-family: "Lato";
+  color: #666d89;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 60px 0 20px 0;
+}
+.container p {
+  font-family: "Lato";
+  color: #767e9e;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  padding-bottom: 35px;
+}
+.services section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+.services section article {
+  flex-basis: 350px;
+  flex-grow: 1;
+  position: relative;
+  padding-left: 80px;
+}
+.services section article:after {
+  content: "\e900";
+  font-family: "icons";
+  font-size: 60px;
+  color: #767e9e;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.services section h3 {
+  font-family: "Lato";
+  color: #666d89;
+  font-size: 18px;
+  font-weight: 900;
+}
+.services section p {
+  font-family: "Lato";
+  color: #767e9e;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.services section article:nth-child(2):after {
+  content: "\e900";
+}
+.services section article:nth-child(3):after {
+  content: "\e901";
+}
+.services section article:nth-child(4):after {
+  content: "\e902";
+}
+.services section article:nth-child(5):after {
+  content: "\e903";
+}
+.services section article:nth-child(6):after {
+  content: "\e904";
+}

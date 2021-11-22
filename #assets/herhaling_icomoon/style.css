@@ -1,0 +1,25 @@
+/*
+1) icomoon.io
+2) icon uploaden of/en icons kiezen
+3) rechts onderaan generate font
+4) enkel style.css en map fonts in folder icons plaatsen
+5) icons/style.css linken in html file
+6) in je eigen css kan je dan in de after en/of de before 
+   de juiste content code gebruiken...
+
+*/
+
+h1 {
+  color: red;
+  position: relative;
+  padding-left: 40px;
+}
+h1:after {
+  content: "\e900";
+  font-family: "icomoon";
+  font-size: 40px;
+  color: pink;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
