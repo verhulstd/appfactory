@@ -144,17 +144,21 @@ footer {
 .services section article:after {
   content: "\e900";
   font-family: "icons";
-  font-size: 60px;
+  font-size: 38px;
   color: #767e9e;
   position: absolute;
   left: 0;
   top: 0;
+  border: 2px #767e9e solid;
+  border-radius: 50%;
+  padding: 12px;
 }
 .services section h3 {
   font-family: "Lato";
   color: #666d89;
   font-size: 18px;
   font-weight: 900;
+  margin-bottom: 15px;
 }
 .services section p {
   font-family: "Lato";
@@ -178,4 +182,71 @@ footer {
 }
 .services section article:nth-child(6):after {
   content: "\e904";
+}
+
+.portfolio {
+  padding-bottom: 30px;
+}
+.portfolio ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.portfolio ul button {
+  white-space: nowrap;
+  background: none;
+  border: 1px solid #767e9e;
+  border-radius: 5px;
+  color: #767e9e;
+  font-family: Lato;
+  font-size: 12px;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+.portfolio ul button:hover,
+.portfolio ul button.active {
+  color: white;
+  border-color: white;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+.images .imgHolder {
+  aspect-ratio: 1/1;
+  flex-basis: 250px;
+  flex-grow: 1;
+  border: 3px solid transparent;
+  transition: all 300ms;
+  cursor: pointer;
+  position: relative;
+}
+.images .imgHolder:after {
+  content: "\e906";
+  font-family: icons;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  left: calc(50% - 25px);
+  top: calc(50% - 25px);
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-delay: 200ms;
+}
+.images .imgHolder:hover {
+  border-color: white;
+  transform: scale(1.05);
+}
+.images .imgHolder:hover:after {
+  opacity: 1;
+}
+.images .imgHolder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
